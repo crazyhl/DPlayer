@@ -2,9 +2,11 @@
 
 This feature is for playlist videos。
 
+### Open Option
+
 if you want to open this feature，you have two way to open it.
 
-#### First
+#### first way
 
 you can at init function add option, like this:
 
@@ -33,5 +35,34 @@ const dp = new DPlayer({
             },
         },
     ],
+});
+```
+
+you add this line, the next episode button will show.
+
+#### second way (recommend)
+
+if you wang to dynamic control button show or hide，i recommend you choose this way.
+i add to function to control button.
+
+```javascript
+dp.showNextEpisodeButton();
+```
+
+```javascript
+dp.hideNextEpisodeButton();
+```
+
+use this way you can at anywhere to control you button.
+
+### Event binding
+
+after you open option, when you click the button, it will trigger a event `change_next_episode`.
+
+you can at your code file to response event, like this
+
+```javascript
+dp.on('change_next_episode', function() {
+    // TODO change video or do what you want
 });
 ```
