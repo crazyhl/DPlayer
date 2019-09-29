@@ -1,9 +1,4 @@
-<p align="center">
-<img src="https://i.imgur.com/LnPvZvO.png" alt="ADPlayer" width="100">
-</p>
 <h1 align="center">DPlayer Modify</h1>
-
-> 🍭 Wow, such a lovely HTML5 danmaku video player
 
 ## Introduction
 
