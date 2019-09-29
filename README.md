@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is a `dplayer` modify version. I add some feature to adapt my demand.
+This is a `dplayer` modify version. I add some features to adapt my demands.
 
 **[Original Docs](http://dplayer.js.org)**
 
@@ -10,7 +10,7 @@ This is a `dplayer` modify version. I add some feature to adapt my demand.
 
 ## My additional feature
 
--   next episode
+-   [next episode](featureDoc/nextEpisode.md)
 
 ## Original author
 

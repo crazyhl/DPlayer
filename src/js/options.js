@@ -56,7 +56,7 @@ export default (options) => {
         },
         {
             text: 'About author',
-            link: 'https://diygod.me',
+            link: 'https://cimple.ink',
         },
         {
             text: `DPlayer v${DPLAYER_VERSION}`,
