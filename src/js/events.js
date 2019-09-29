@@ -52,6 +52,7 @@ class Events {
             'subtitle_show',
             'subtitle_hide',
             'subtitle_change',
+            'change_next_episode',
         ];
     }
 

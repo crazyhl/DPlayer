@@ -38,7 +38,6 @@ class Controller {
 
     initNextEpisodeButton() {
         if (this.player.options.nextEpisode) {
-            this.player.template.nextEpisodeButton.style.display = 'block';
             this.player.template.nextEpisodeButton.addEventListener('click', () => {
                 this.player.events.trigger('change_next_episode');
             });

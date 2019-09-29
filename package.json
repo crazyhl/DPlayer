@@ -1,7 +1,7 @@
 {
     "name": "dplayer_modify",
     "version": "1.25.0m",
-    "description": "dplayer modify add some feature",
+    "description": "dplayer modify version add some feature",
     "main": "dist/DPlayer.min.js",
     "scripts": {
         "start": "npm run dev",
