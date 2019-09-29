@@ -37,10 +37,12 @@ class Controller {
     }
 
     initNextEpisodeButton() {
+        this.player.template.nextEpisodeButton.onclick = null;
         if (this.player.options.nextEpisode) {
-            this.player.template.nextEpisodeButton.addEventListener('click', () => {
+            this.player.template.nextEpisodeButton.style.display = 'inline-block';
+            this.player.template.nextEpisodeButton.onclick = () => {
                 this.player.events.trigger('change_next_episode');
-            });
+            };
         } else {
             this.player.template.nextEpisodeButton.style.display = 'none';
         }
@@ -309,6 +311,16 @@ class Controller {
 
     destroy() {
         clearTimeout(this.autoHideTimer);
+    }
+
+    showNextEpisodeButton() {
+        this.player.options.nextEpisode = true;
+        this.initNextEpisodeButton();
+    }
+
+    hideNextEpisodeButton() {
+        this.player.options.nextEpisode = false;
+        this.initNextEpisodeButton();
     }
 }
 

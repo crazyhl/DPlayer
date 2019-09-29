@@ -611,6 +611,14 @@ class DPlayer {
         /* global DPLAYER_VERSION */
         return DPLAYER_VERSION;
     }
+
+    showNextEpisodeButton() {
+        this.controller.showNextEpisodeButton();
+    }
+
+    hideNextEpisodeButton() {
+        this.controller.hideNextEpisodeButton();
+    }
 }
 
 export default DPlayer;

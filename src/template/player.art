@@ -77,10 +77,11 @@
         <button class="dplayer-icon dplayer-play-icon">
             <span class="dplayer-icon-content">{{@ icons.play }}</span>
         </button>
+        {{ if options.nextEpisode }}
             <button class="dplayer-icon dplayer-next-episode-icon">
                 <span class="dplayer-icon-content">{{@ icons.nextEpisode }}</span>
             </button>
-
+        {{ /if }}
         <div class="dplayer-volume">
             <button class="dplayer-icon dplayer-volume-icon">
                 <span class="dplayer-icon-content">{{@ icons.volumeDown }}</span>
