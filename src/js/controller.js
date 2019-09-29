@@ -30,8 +30,20 @@ class Controller {
         this.initScreenshotButton();
         this.initSubtitleButton();
         this.initHighlights();
+        this.initNextEpisodeButton();
         if (!utils.isMobile) {
             this.initVolumeButton();
+        }
+    }
+
+    initNextEpisodeButton() {
+        if (this.player.options.nextEpisode) {
+            this.player.template.nextEpisodeButton.style.display = 'block';
+            this.player.template.nextEpisodeButton.addEventListener('click', () => {
+                this.player.events.trigger('change_next_episode');
+            });
+        } else {
+            this.player.template.nextEpisodeButton.style.display = 'none';
         }
     }
 
